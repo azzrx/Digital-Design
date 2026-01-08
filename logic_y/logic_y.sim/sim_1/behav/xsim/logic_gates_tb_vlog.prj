@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../logic_y.srcs/sources_1/new/logic_gates_top.v" \
+"../../../../logic_y.srcs/sources_1/new/not_gate.v" \
+"../../../../logic_y.srcs/sources_1/new/or_gate.v" \
+
+sv xil_defaultlib  \
+"../../../../logic_y.srcs/sources_1/new/and_gate.sv" \
+"../../../../logic_y.srcs/sources_1/new/logic_gates.sv" \
+"../../../../logic_y.srcs/sim_1/new/logic_gates_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

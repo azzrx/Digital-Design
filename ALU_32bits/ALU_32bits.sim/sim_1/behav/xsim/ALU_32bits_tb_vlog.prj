@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../ALU_32bits.srcs/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/ipshared/ec67/hdl" --include "../../../../ALU_32bits.srcs/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/ipshared/58e2/hdl" --include "../../../../ALU_32bits.srcs/sources_1/bd/design_1/ip/design_1_cg_fpga_0_0/ipshared/70cf/hdl" --include "D:/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../ALU_32bits.srcs/sources_1/new/alu.sv" \
+"../../../../ALU_32bits.srcs/sources_1/new/fulladder.sv" \
+"../../../../ALU_32bits.srcs/sources_1/new/rca.sv" \
+"../../../../ALU_32bits.srcs/sim_1/new/ALU_32bits_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

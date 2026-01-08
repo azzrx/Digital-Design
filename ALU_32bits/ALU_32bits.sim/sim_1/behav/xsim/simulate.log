@@ -1,0 +1,61 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+========================================
+32-bit ALU Testbench
+Testing alu.sv module only
+Automated testing from file
+========================================
+
+WARNING: file test_vectors.txt could not be opened
+Successfully opened test_vectors.txt
+
+========================================
+Starting Automated ALU Test
+Testing alu.sv module only
+Reading test vectors from file...
+========================================
+
+WARNING: Unknown operation 'ND' at line 1, skipping...
+WARNING: Unknown operation 'ND' at line 2, skipping...
+[PASS] Test 1: OR   | A=00000000 B=ffffffff | Result=ffffffff ZF=0 OF=0
+[PASS] Test 2: OR   | A=aaaaaaaa B=55555555 | Result=ffffffff ZF=0 OF=0
+[PASS] Test 3: NAND | A=ffffffff B=ffffffff | Result=00000000 ZF=1 OF=0
+[PASS] Test 4: NOT  | A=12345678 B=00000000 | Result=edcba987 ZF=0 OF=0
+[PASS] Test 5: SLL  | A=00000001 B=0000001f | Result=80000000 ZF=0 OF=0
+[PASS] Test 6: SLL  | A=12345678 B=00000008 | Result=34567800 ZF=0 OF=0
+[PASS] Test 7: SRL  | A=80000000 B=00000001 | Result=40000000 ZF=0 OF=0
+[PASS] Test 8: SRA  | A=80000000 B=00000001 | Result=c0000000 ZF=0 OF=0
+[PASS] Test 9: SRA  | A=f0000000 B=00000004 | Result=ff000000 ZF=0 OF=0
+[PASS] Test 10: MULU | A=0000ffff B=00000002 | Result=0001fffe ZF=0 OF=0
+[PASS] Test 11: MULU | A=00000000 B=12345678 | Result=00000000 ZF=1 OF=0
+[PASS] Test 12: MUL  | A=7fffffff B=00000002 | Result=fffffffe ZF=0 OF=0
+[PASS] Test 13: MUL  | A=fffffffb B=00000006 | Result=ffffffe2 ZF=0 OF=0
+WARNING: Unknown operation 'U' at line 16, skipping...
+WARNING: Unknown operation 'U' at line 17, skipping...
+[PASS] Test 14: SUB  | A=80000000 B=00000001 | Result=7fffffff ZF=0 OF=1
+[PASS] Test 15: SUB  | A=00000005 B=00000008 | Result=fffffffd ZF=0 OF=0
+[PASS] Test 16: SUB  | A=00000000 B=00000000 | Result=00000000 ZF=1 OF=0
+[PASS] Test 17: SUBU | A=00000001 B=ffffffff | Result=00000002 ZF=0 OF=0
+[FAIL] Test 18: SLT  | A=80000000 B=7fffffff
+       Expected: Result=00000001 ZF=0 OF=1
+       Got:      Result=00000001 ZF=0 OF=0
+[PASS] Test 19: SLT  | A=fffffffb B=00000005 | Result=00000001 ZF=0 OF=0
+[FAIL] Test 20: SLT  | A=7fffffff B=80000000
+       Expected: Result=00000000 ZF=1 OF=1
+       Got:      Result=00000000 ZF=1 OF=0
+WARNING: Unknown operation 'SLT:' at line 25, skipping...
+
+========================================
+Test Summary
+========================================
+Total Tests:  20
+Passed:       18
+Failed:       2
+Pass Rate:    90.00%
+========================================
+
+TEST FAILED: Some test cases failed!
+Please check the error messages above.
+
+Simulation completed.
+$finish called at time : 310 ns : File "D:/shuzisheji/ALU_32bits/ALU_32bits.srcs/sim_1/new/ALU_32bits_tb.sv" Line 236

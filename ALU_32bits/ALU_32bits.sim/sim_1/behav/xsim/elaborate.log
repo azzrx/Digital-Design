@@ -1,0 +1,16 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f25235a2e55d40088140fb0a9d15b4ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_32bits_tb_behav xil_defaultlib.ALU_32bits_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/shuzisheji/ALU_32bits/ALU_32bits.srcs/sources_1/new/alu.sv" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.rca_default
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.ALU_32bits_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_32bits_tb_behav
